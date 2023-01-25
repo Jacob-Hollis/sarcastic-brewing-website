@@ -2,8 +2,11 @@ import './App.css';
 
 export default function Body() {
 return (
-<div className="App-div">
-      <p></p>
+<div class="row content">
+    <p>
+      <b>content </b>
+      (fills remaining space)
+    </p>
 </div>
 );
 }
