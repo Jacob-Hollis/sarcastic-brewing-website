@@ -1,12 +1,15 @@
 import logo from './images/logowithname.png';
 import './App.css';
+import React from "react";
+import Header from "./Header";
+import Body from "./Body";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div className='App-div'>
+      <Header/>
+      <Body/>
     </div>
   );
 }
