@@ -28,17 +28,13 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background-color: #111111;
+  background-color: #171717;
 }
 
 .box {
   display: flex;
   flex-flow: column;
   height: 100%;
-}
-
-.box .row {
-  border: 1px dotted grey;
 }
 
 .row-header {
@@ -55,6 +51,7 @@ body {
   color: #f9f8dc;
   font-size:4ch;
   font-family: 'Do Hyeon', sans-serif;
+  padding-top: 10px;
 }
 
 .row-header .header-buttons {
@@ -114,10 +111,17 @@ cursor: pointer;
 
 .box .row-content {
   flex: 1 1 auto;
-  color: #f9f8dc
+  color: #f9f8dc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 25px;
 }
 
 .box .row-footer {
   flex: 0 1 40px;
-  color: #f9f8dc
+  color: #f9f8dc;
+  margin-left: 10px;
 }

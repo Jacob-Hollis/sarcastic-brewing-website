@@ -1,6 +1,7 @@
 import logo from './images/logo.png';
 import iglogo from './images/iglogo.png';
 import tiktoklogo from './images/tiktoklogo.png';
+import beercan from './images/beercan.jpg';
 import './App.css';
 import React from "react";
 import Header from "./Header";
@@ -12,9 +13,9 @@ function App() {
     <div class="box">
       <div class="row-header">
         <div class="logo">
-          <img src={logo} alt="Sarcasm Brewing Logo" style={{ height: "30%" }}/>
+          <img src={logo} alt="Sarcastic Brewing Logo" style={{ height: "15ch" }}/>
           <p class="logo-text">
-          Sarcastic Brewing
+          arcastic Brewing
           </p>
         </div>
         <div class="header-buttons">
@@ -31,12 +32,11 @@ function App() {
         </div>
       </div>
       <div class="row-content">
-        <p>
-        <b>BODY</b>
-        </p>
+        <h1>DON'T GET TOO EXCITED. OR WE MIGHT JUST MAKE ANOTHER IPA.</h1>
+        <img src={beercan} alt="Beer Can Logo" style={{ height: "100ch" }}/>
       </div>
       <div class="row-footer">
-        <p><b>FOOTER</b></p>
+      {/* Put footer stuff here */}
       </div>
     </div>
   );
