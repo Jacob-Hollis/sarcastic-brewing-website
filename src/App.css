@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -12,26 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-*/
 
-.App-header {
-  background-color: #e86a26;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-div {
-  background-color: #e86a26;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -41,12 +22,13 @@
     transform: rotate(360deg);
   }
 }
+*/
 
 html,
 body {
   height: 100%;
   margin: 0;
-  background-color: #e86a26;
+  background-color: #111111;
 }
 
 .box {
@@ -59,58 +41,83 @@ body {
   border: 1px dotted grey;
 }
 
-.box .row.header {
-  flex: 0 1 auto;
-  /* The above is shorthand for:
-  flex-grow: 0,
-  flex-shrink: 1,
-  flex-basis: auto
-  */
+.row-header {
+  display: flex;
+  padding: 3ch;
 }
 
-.box .row.content {
-  flex: 1 1 auto;
+.row-header .logo {
+  display: flex;
 }
 
-.box .row.footer {
-  flex: 0 1 40px;
+.row-header .logo-text
+{
+  color: #f9f8dc;
+  font-size:4ch;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
-.button{
-    background: transparent;
-    border: none;
-    margin: 30px auto 0;
-    display: block;
-    font-size: 20px;
-    outline: none;
-
-    position: relative;
-    transition: 0.3s;
-    padding: 10px;
+.row-header .header-buttons {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4ch;
+  margin-left: auto;
 }
 
-.button:before{
-  content: '';
-  border-bottom: 1px solid black;
-  padding: 0 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 0;
+.row-header .header-buttons .header-button {
+  background: transparent;
+  border: none;
+  margin: 10px;
+  display: block;
+  font-size: 20px;
+  outline: none;
+  color: #f9f8dc;
+  position: relative;
   transition: 0.3s;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-.button.hover.before
-{
-  width: 100%;
-  padding: 0;
+.row-header .header-buttons .header-button:before{
+content: '';
+border-bottom: 1px solid #f9f8dc;
+padding: 0 10px;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: 0 auto;
+width: 0;
+transition: 0.3s;
+color: #f9f8dc
 }
 
-.button.active
+.row-header .header-buttons .header-button:hover:before
 {
-  background: black;
-  color: white;
-  transition: none;
+width: 100%;
+padding: 0;
+}
+
+.row-header .social-buttons{
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5.1ch;
+}
+
+.row-header .social-buttons .social-button
+{
+background: transparent;
+border: none;
+cursor: pointer;
+}
+
+.box .row-content {
+  flex: 1 1 auto;
+  color: #f9f8dc
+}
+
+.box .row-footer {
+  flex: 0 1 40px;
+  color: #f9f8dc
 }
