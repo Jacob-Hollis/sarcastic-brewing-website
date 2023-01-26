@@ -32,8 +32,14 @@ function App() {
         </div>
       </div>
       <div class="row-content">
-        <h1>DON'T GET TOO EXCITED. OR WE MIGHT JUST MAKE ANOTHER IPA.</h1>
+        <h1>DON'T GET TOO EXCITED. OR WE MIGHT JUST MAKE ANOTHER IPA</h1>
         <img src={beercan} alt="Beer Can Logo" style={{ height: "100ch" }}/>
+        <h1>JUST KIDDING IT DOESN'T MATTER. WE MADE ONE MORE IPA</h1>
+        <h1>ACTUALLY MORE THAN ONE</h1>
+        <hr/>
+        <h1 class="shop">THE GOODS</h1>
+        <h3>ENTER YOUR EMAIL TO KEEP UP WITH THE LATEST SARCASTIC SHENANIGANS.</h3>
+        <small>(evil shenanigans)</small>
       </div>
       <div class="row-footer">
       {/* Put footer stuff here */}
