@@ -1,29 +1,3 @@
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/
-
 html,
 body {
   height: 100%;
@@ -124,9 +98,16 @@ padding: 0;
 
 .row-header .social-buttons .social-button
 {
-background: transparent;
-border: none;
-cursor: pointer;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.row-header .social-buttons .social-button:hover
+{
+  opacity:0.5;
 }
 
 .box .row-content {
@@ -140,8 +121,91 @@ cursor: pointer;
   font-size: 25px;
 }
 
+.offering {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-button {
+  background-color: coral;
+  color:#f9f8dc;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 25px;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.buy-button:hover{
+  background-color: rgba(255, 127, 80, 0.596);
+}
+
+.email-div {
+  margin: 15%;
+}
+
+.email-input {
+  background-color: #f9f8dc;
+  color:lightslategrey;
+  padding: 10%;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 20px;
+  width: 130%;
+  border: 0;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.email-button {
+  background-color: coral;
+  color:#f9f8dc;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.email-button:hover{
+  background-color: rgba(255, 127, 80, 0.596);
+}
+
 .box .row-footer {
-  flex: 0 1 40px;
+  display: flex;
   color: #f9f8dc;
   margin-left: 10px;
+}
+
+.row-footer .social-buttons{
+  display: flex;
+  margin-top: 5.1ch;
+  margin-bottom: 5ch;
+  margin-left: 15%;
+}
+
+.row-footer .social-buttons .social-button
+{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.row-footer .social-buttons .social-button:hover{
+  opacity: 0.5;
+}
+
+.saying {
+  justify-content: right;
+  color:#f9f8dc;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 20px;
+  margin-top: 5.1ch;
+  margin-bottom: 5ch;
+  margin-left: auto;
+  margin-right: 15%;
 }
