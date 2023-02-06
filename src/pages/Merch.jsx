@@ -2,7 +2,9 @@ import React from 'react';
 
 function Merch() {
     return (
-        <h1>this is the merch page</h1>
+        <div class='content'>
+            <h1>this is the merch page</h1>
+        </div>
     );
 }
 

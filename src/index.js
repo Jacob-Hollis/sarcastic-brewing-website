@@ -11,12 +11,20 @@ import Merch from "./pages/Merch";
 import UnderConstruction from "./pages/UnderConstruction";
 import reportWebVitals from './reportWebVitals';
 
+const tiktoklink = 'https://www.tiktok.com/@sarcasticbrewing';
+const iglink = 'https://www.instagram.com/sarcasticbrewing';
+
+export const openInNewTab = (url) => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+  if (newWindow) newWindow.opener = null;
+};
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<Layout iglink={iglink} tiktoklink={tiktoklink} openInNewTab={openInNewTab}/>}>
+          <Route index element={<Home iglink={iglink} tiktoklink={tiktoklink} openInNewTab={openInNewTab}/>} />
           <Route path="about" element={<About />} />
           <Route path="merch" element={<Merch />} />
           <Route path="contact" element={<Contact />} />

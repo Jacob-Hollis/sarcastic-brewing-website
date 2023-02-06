@@ -1,14 +1,12 @@
 import '../index.css';
 import React from 'react';
-import iglogo from '../images/iglogo.png';
-import tiktoklogo from '../images/tiktoklogo.png';
 import beercan from '../images/beercan.jpg';
 import offering from '../images/offering.jpg';
 import longcanimage from '../images/longcanimage.jpg';
 
-function Home() {
+function Home(props) {
     return (
-    <div class="box">
+    <div class="content">
       <div class="row-content">
         <h1>DON'T GET TOO EXCITED. OR WE MIGHT JUST MAKE ANOTHER IPA</h1>
         <img src={beercan} alt="Beer Can Logo" style={{ height: "100ch" }}/>
@@ -33,7 +31,7 @@ function Home() {
             <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
           </div>
         </div>
-        <img src={longcanimage} alt="Can on a table" style={{ height: "50ch" , marginTop: "10%", objectFit: "cover", width: "100%", height: "100%"}}/>
+        <img src={longcanimage} alt="Can on a table" style={{ marginTop: "10%", objectFit: "cover", width: "100%", height: "100%"}}/>
         <div class="email-div">
           <h3>ENTER YOUR EMAIL TO KEEP UP WITH THE LATEST SARCASTIC SHENANIGANS.</h3>
           <small>(evil shenanigans of course)</small>
@@ -44,13 +42,6 @@ function Home() {
             <button class="email-button">SIGN ME UP</button>
           </div>
         </div>
-      </div>
-      <div class="row-footer">
-        <div class="social-buttons">
-          <button class="social-button"><img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }}/></button>
-          <button class="social-button"><img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }}/></button>
-        </div>
-        <p class="saying">SARCASTIC BREWING™</p>
       </div>
     </div>
     );

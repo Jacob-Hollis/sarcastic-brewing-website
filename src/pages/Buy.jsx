@@ -2,7 +2,9 @@ import React from 'react';
 
 function Buy() {
     return (
-        <h1>this is the find a retailer page</h1>
+        <div class='content'>
+            <h1>this is the find a retailer page</h1>
+        </div>
     );
 }
 

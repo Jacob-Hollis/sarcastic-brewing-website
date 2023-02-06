@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './index.css';
 import logo from './images/logo.png';
 import iglogo from './images/iglogo.png';
 import tiktoklogo from './images/tiktoklogo.png';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div class="row-header">
         <div class="logo">
@@ -35,8 +35,12 @@ function Navbar() {
           </button>
         </div>
         <div class="social-buttons">
-          <button class="social-button"><img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }}/></button>
-          <button class="social-button"><img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }}/></button>
+            <button class="social-button">
+                <img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.tiktoklink)}/>
+            </button>
+            <button class="social-button">
+                <img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.iglink)}/>
+            </button>
         </div>
     </div>
   );

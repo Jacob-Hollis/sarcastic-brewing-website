@@ -25,10 +25,22 @@ h1.shop {
   margin-top: 15%;
 }
 
-.box {
+.content {
   display: flex;
   flex-flow: column;
   height: 100%;
+  min-height: calc(100vh - 100px); 
+}
+
+.content .row-content {
+  flex: 1 1 auto;
+  color: #f9f8dc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 25px;
 }
 
 .row-header {
@@ -110,17 +122,6 @@ padding: 0;
   opacity:0.5;
 }
 
-.box .row-content {
-  flex: 1 1 auto;
-  color: #f9f8dc;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  text-align: center;
-  font-size: 25px;
-}
-
 .offering {
   display: flex;
   justify-content: center;
@@ -140,7 +141,7 @@ padding: 0;
 }
 
 .email-div {
-  margin: 15%;
+  margin-top: 15%;
 }
 
 .email-input {
@@ -173,7 +174,8 @@ padding: 0;
   background-color: rgba(255, 127, 80, 0.596);
 }
 
-.box .row-footer {
+.row-footer {
+  height: 100px;
   display: flex;
   color: #f9f8dc;
   margin-left: 10px;

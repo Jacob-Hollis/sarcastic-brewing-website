@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Erro() {
+function Error() {
     return (
-        <h1>Whoops, you missed the target my man!</h1>
+        <div class='content'>
+            <h1>Whoops, you missed the target my man!</h1>
+        </div>
     );
 }
 
