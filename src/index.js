@@ -3,7 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Buy from "./pages/Buy";
+import Products from "./pages/Products";
 import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+import Merch from "./pages/Merch";
 import UnderConstruction from "./pages/UnderConstruction";
 import reportWebVitals from './reportWebVitals';
 
@@ -14,8 +18,13 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="merch" element={<Merch />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<UnderConstruction />} />
+          <Route path="about" element={<About />} />
+          <Route path="products" element={<Products />} />
+          <Route path="buy" element={<Buy />} />
+          <Route path="construction" element={<UnderConstruction />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </BrowserRouter>

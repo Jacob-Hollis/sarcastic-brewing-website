@@ -19,19 +19,19 @@ function Navbar() {
             <Link to="/" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Home</Link>
           </button>
           <button class="header-button">
-            <Link to="/about" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Products</Link>
+            <Link to="/products" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Products</Link>
           </button>
           <button class="header-button">
-            <Link to="/contact" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Merch</Link>
+            <Link to="/merch" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Merch</Link>
           </button>
           <button class="header-button">
-            <Link to="/" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Contact Us</Link>
+            <Link to="/contact" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Contact Us</Link>
           </button>
           <button class="header-button">
             <Link to="/about" style={{ textDecoration: 'none', color:'#f9f8dc' }}>About Us</Link>
           </button>
           <button class="header-button">
-            <Link to="/contact" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Find a Retailer</Link>
+            <Link to="/buy" style={{ textDecoration: 'none', color:'#f9f8dc' }}>Find a Retailer</Link>
           </button>
         </div>
         <div class="social-buttons">
