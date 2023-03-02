@@ -125,6 +125,8 @@ padding: 0;
 .offering {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .buy-button {

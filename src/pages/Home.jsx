@@ -31,6 +31,16 @@ function Home(props) {
             <h3 class="shop">IT'S SOUR HOUR</h3>
             <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
           </div>
+          <div>
+            <img src={offering} alt="Beer Can Logo" style={{ height: "50ch" }}/>
+            <h3 class="shop">THIS ONE GOT CITRUS IN IT</h3>
+            <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
+          </div>
+          <div>
+            <img src={offering} alt="Beer Can Logo" style={{ height: "50ch" }}/>
+            <h3 class="shop">ALL ABOOT THE STOOT</h3>
+            <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
+          </div>
         </div>
         <img src={longcanimage} alt="Can on a table" style={{ marginTop: "10%", objectFit: "cover", width: "100%", height: "100%"}}/>
         <div class="email-div">
