@@ -36,10 +36,10 @@ function Navbar(props) {
         </div>
         <div class="social-buttons">
             <button class="social-button">
-                <img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.tiktoklink)}/>
+                <img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.iglink)}/>
             </button>
             <button class="social-button">
-                <img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.iglink)}/>
+                <img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.tiktoklink)}/>
             </button>
         </div>
     </div>

@@ -7,8 +7,12 @@ function Navbar(props) {
   return (
     <div class="row-footer">
         <div class="social-buttons">
-          <button class="social-button"><img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.tiktoklink)}/></button>
-          <button class="social-button"><img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.iglink)}/></button>
+          <button class="social-button">
+            <img src={iglogo} alt="Instagram Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.iglink)}/>
+          </button>
+          <button class="social-button">
+            <img src={tiktoklogo} alt="Tik Tok Logo" style={{ height: "25px" }} onClick={() => props.openInNewTab(props.tiktoklink)}/>
+          </button>
         </div>
         <p class="saying">SARCASTIC BREWING™</p>
     </div>

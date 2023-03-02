@@ -8,7 +8,7 @@ const Layout = (props) => {
     <>
       <Navbar iglink={props.iglink} tiktoklink={props.tiktoklink} openInNewTab={props.openInNewTab}/>
       <Outlet />
-      <Footer />
+      <Footer iglink={props.iglink} tiktoklink={props.tiktoklink} openInNewTab={props.openInNewTab}/>
     </>
   );
 };

@@ -8,26 +8,27 @@ function Home(props) {
     return (
     <div class="content">
       <div class="row-content">
-        <h1>DON'T GET TOO EXCITED. OR WE MIGHT JUST MAKE ANOTHER IPA</h1>
+        <h1>WE DON'T THINK LIFE SHOULD BE THAT SERIOUS</h1>
+        <h1>ESPECIALLY WHEN IT COMES TO BEER</h1>
         <img src={beercan} alt="Beer Can Logo" style={{ height: "100ch" }}/>
-        <h1>JUST KIDDING IT DOESN'T MATTER. WE MADE ANOTHER IPA.</h1>
-        <h1>AND SPRINKLED IN SOME OTHERS.</h1>
+        <h1>SO DON'T TAKE OUR BEER TOO SERIOUSLY.</h1>
+        <h1>SERIOUSLY, WE MEAN IT</h1>
         <hr/>
         <h1 class="shop">THE GOODS</h1>
         <div class="offering">
           <div>
             <img src={offering} alt="Beer Can Logo" style={{ height: "50ch" }}/>
-            <h3 class="shop">ANOTHER FREAKING IPA</h3>
+            <h3 class="shop">JUST ANOTHER IPA</h3>
             <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
           </div>
           <div>
             <img src={offering} alt="Beer Can Logo" style={{ height: "50ch" }}/>
-            <h3 class="shop">JUST A BORING PALE ALE</h3>
+            <h3 class="shop">A BORING PALE ALE</h3>
             <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
           </div>
           <div>
             <img src={offering} alt="Beer Can Logo" style={{ height: "50ch" }}/>
-            <h3 class="shop">PILS-WHAT?</h3>
+            <h3 class="shop">IT'S SOUR HOUR</h3>
             <button class="buy-button">SHUT UP AND TAKE MY MONEY</button>
           </div>
         </div>
